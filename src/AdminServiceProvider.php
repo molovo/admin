@@ -37,6 +37,10 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__.'/config/config.php', 'admin'
         );
 
+        $this->publishes([
+            __DIR__.'/database/migrations/' => database_path('migrations')
+        ], 'migrations');
+
         $this->publishes( [
             __DIR__.'/resources/assets/dist' => public_path( 'vendor/molovo/admin' )
         ], 'public' );

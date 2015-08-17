@@ -19,7 +19,9 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return 'Tada!';
+        return view( 'admin::dashboard.users.list', [
+            'users' => $users
+        ] );
     }
 
     /**

@@ -1,4 +1,4 @@
-@extends( 'admin::layouts.dashboard' )
+@extends( 'admin::dashboard.users' )
 
 @section( 'title', 'Create User' )
 
@@ -11,6 +11,8 @@
   ?>
 
   {!! Form::model( new \Molovo\Admin\Models\User, $formOptions ) !!}
+
+    <legend>User Details</legend>
 
     <fieldset class="admin-form--title">
       {!! Form::label( 'name', 'User Name' ) !!}

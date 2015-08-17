@@ -4,8 +4,53 @@
   padding: 3rem .75rem
   color: white
   height: 100vh
-  overflow-y: auto
+  // overflow-y: auto
   display: inline-block
+
+  .admin--sidebar-module-selector
+    margin-bottom: 1.5rem
+    position: relative
+    z-index: 10
+
+    &-item
+      display: none
+
+      a
+        width: 100%
+        padding: .25rem .75rem
+        font-weight: 700
+
+      &.selected
+        display: block
+
+    @for $i from 1 through 10
+      &[module-count="#{$i}"]:hover
+        margin-bottom: #{1.875rem - ( 2rem * $i )}
+
+    &:hover
+      .admin--sidebar-module-selector-item
+        display: block
+        background: white
+        border-radius: 0
+
+        &:hover
+          background: $blue
+
+          a
+            background: transparent
+            color: white
+
+        &:not(:last-child)
+          border-bottom: 1px solid rgba( $dark, .1 )
+
+        &:first-child
+          border-radius: .15rem .15rem 0 0
+
+        &:last-child
+          border-radius: 0 0 .15rem .15rem
+
+        a
+          color: $dark
 
   &-logo
     display: block
@@ -15,7 +60,7 @@
     &, li, ul, ol
       list-style: none
       padding: 0
-      margin: 0
+      margin-left: 0
 
     > li
       margin-bottom: 1.5rem
@@ -28,7 +73,7 @@
     margin-bottom: 0
     font:
       size: .675rem
-      weight: 800
+      weight: 700
     letter-spacing: .025rem
     text-transform: uppercase
     padding: .25rem .75rem
@@ -37,11 +82,11 @@
     color: white
     text-decoration: none
     display: block
-    padding: .25rem .75rem .15rem
+    padding: .25rem .75rem
     border-radius: .15rem
     font:
       family: $secondary
-      weight: 500
+      weight: 400
 
     &:hover
       background: rgba( white, .15 )

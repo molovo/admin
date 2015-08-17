@@ -1,6 +1,6 @@
 <?php
 
-Route::group( [ 'prefix' => 'admin' ], function() {
+Route::group( [ 'prefix' => '_admin' ], function() {
   Route::get( '/', function() {
     return view( 'admin::layouts.dashboard' );
   } );
