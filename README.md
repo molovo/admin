@@ -1,3 +1,4 @@
+<!--
 # :package_name
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
@@ -68,3 +69,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/league/:package_name
 [link-author]: https://github.com/:author_username
 [link-contributors]: ../../contributors
+-->
+
+# admin
+A fully fledged admin module for Laravel 5.1+
