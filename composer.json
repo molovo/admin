@@ -1,6 +1,6 @@
 {
   "name": "molovo/admin",
-  "description": "An admin module for Laravel 5.1+",
+  "description": "An admin module for Laravel 5",
   "keywords": [
     "molovo",
     "admin"
